@@ -286,4 +286,157 @@ h2 {
     .book-cover-image {
         margin: 0 auto;
     }
+}.reading-list {
+    background-color: #f6f0e7;
+}
+
+.section-heading {
+    max-width: 720px;
+    margin-bottom: 50px;
+}
+
+.section-heading > p:last-child {
+    color: #52635d;
+    font-size: 1.05rem;
+}
+
+.book-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.book-card {
+    background-color: #fffaf3;
+    border: 1px solid #ddcfbe;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(33, 60, 53, 0.08);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.book-card:hover {
+    box-shadow: 0 18px 38px rgba(33, 60, 53, 0.16);
+    transform: translateY(-7px);
+}
+
+.card-cover {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 28px;
+}
+
+.genre {
+    color: #7c2638;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    margin-bottom: 12px;
+}
+
+.book-card h3 {
+    color: #213c35;
+    font-family: "Playfair Display", serif;
+    font-size: 1.65rem;
+    line-height: 1.15;
+    margin-bottom: 6px;
+}
+
+.card-author {
+    color: #7c2638;
+    font-style: italic;
+    margin-bottom: 18px;
+}
+
+.card-text {
+    color: #52635d;
+    font-size: 0.95rem;
+}
+
+.join {
+    background-color: #7c2638;
+    color: #ffffff;
+    padding: 100px 0;
+}
+
+.join-content {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 90px;
+    align-items: center;
+}
+
+.join .eyebrow {
+    color: #ead9b9;
+}
+
+.join h2 {
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.join-content > div:last-child > p {
+    color: #f2e6df;
+    font-size: 1.05rem;
+    margin-bottom: 28px;
+}
+
+.light-button {
+    background-color: #f6f0e7;
+    color: #7c2638;
+}
+
+.light-button:hover {
+    background-color: #213c35;
+    color: #ffffff;
+}
+
+.site-footer {
+    background-color: #172d27;
+    color: #c8d2ce;
+    padding: 38px 0;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-logo {
+    color: #ffffff;
+}
+
+.site-footer p {
+    font-size: 0.85rem;
+}
+
+@media (max-width: 900px) {
+    .book-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 760px) {
+    .book-cards,
+    .join-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 560px) {
+    .book-cards {
+        grid-template-columns: 1fr;
+    }
 }
